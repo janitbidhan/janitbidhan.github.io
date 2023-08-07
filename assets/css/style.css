@@ -350,10 +350,12 @@ h6 {
     #hero {
         text-align: center;
     }
+
     #hero .social-links {
         flex-direction: unset;
         justify-content: center;
     }
+
     #hero h1 {
         font-size: 32px;
         line-height: 36px;
@@ -633,12 +635,14 @@ section {
     padding: 20px;
     margin: 5px;
 }
+
 .box-form {
     width: 95%;
-    border: 1px solid var(--text-color-level3,rgba(26,26,26,0.1));
+    border: 1px solid var(--text-color-level3, rgba(26, 26, 26, 0.1));
     border-radius: 8px;
     box-shadow: 0 1px 8px 0 rgb(0 0 0/8%)
 }
+
 /* Your existing CSS styles go here... */
 
 /* Improved custom dropdown styling */
