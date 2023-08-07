@@ -350,7 +350,10 @@ h6 {
     #hero {
         text-align: center;
     }
-
+    #hero .social-links {
+        flex-direction: unset;
+        justify-content: center;
+    }
     #hero h1 {
         font-size: 32px;
         line-height: 36px;
@@ -621,4 +624,147 @@ section {
 
 #footer .credits {
     font-size: 13px;
+}
+
+
+.centered-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 5px;
+}
+.box-form {
+    width: 95%;
+    border: 1px solid var(--text-color-level3,rgba(26,26,26,0.1));
+    border-radius: 8px;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0/8%)
+}
+/* Your existing CSS styles go here... */
+
+/* Improved custom dropdown styling */
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.custom-dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.custom-dropdown .arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #666; /* Change the color as desired */
+    pointer-events: none;
+}
+
+/* On focus, add a slight shadow to the select */
+.custom-dropdown select:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Your custom CSS styles go here */
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    display: inline-block;
+    margin: 10px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #0763bb; /* Hover color */
+}
+
+/* Customize individual social media icons */
+.social-link.twitter {
+    color: #1da1f2;
+}
+
+.social-link.instagram {
+    color: #e4405f;
+}
+
+.social-link.github {
+    color: white;
+}
+
+.social-link.linkedin {
+    color: #0077b5;
+}
+
+.social-link.gmail {
+    color: #ea4335;
+}
+
+/* Tooltip styles */
+.social-link::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-radius: 3px;
+    background-color: #333;
+    color: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.social-link:hover {
+    background-color: #0763bb; /* Hover color */
+}
+
+.social-link:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-link i {
+    font-size: 18px;
 }

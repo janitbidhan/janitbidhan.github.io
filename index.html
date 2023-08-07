@@ -8,7 +8,7 @@
     <title>Janit Bidhan</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
-    <meta name="google-site-verification" content="GXSKTjRU4ph3-cOZvCAy9m5FKzzlQVk8ZgCoYOLr1ts" />
+    <meta content="GXSKTjRU4ph3-cOZvCAy9m5FKzzlQVk8ZgCoYOLr1ts" name="google-site-verification"/>
 
     <!-- Photos -->
     <link href="assets/img/profile-pic-2.png" rel="icon">
@@ -23,6 +23,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.4/swiper-bundle.css" rel="stylesheet">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <!-- Custom CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -38,10 +40,13 @@
         <ul>
             <li><a class="nav-link scrollto" href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
             <li><a class="nav-link scrollto" href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-            <li><a class="nav-link scrollto" href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a>
+            <li><a class="nav-link scrollto" href="#resume"><i class="bx bx-file-blank"></i> <span>Timeline</span></a>
             </li>
             <li>
-                <a class="nav-link scrollto" href="#contact"><i class="bx bx-envelope"></i> <span>Contact</span></a>
+                <a class="nav-link scrollto" href="#blogs"><i class="bx bx-pen"></i> <span>Blogs</span></a>
+            </li>
+            <li>
+                <a class="nav-link scrollto" href="#contact"><i class="bx bx-envelope"></i> <span>Connect with me</span></a>
             </li>
         </ul>
     </nav><!-- .nav-menu -->
@@ -50,7 +55,7 @@
 
 <!-- ======= Hero Section ======= -->
 <section class="d-flex flex-column justify-content-center" id="hero">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100" style="text-align: center;">
         <h1>Janit Bidhan</h1>
         <p>I'm <span class="typed"
                      data-typed-items="Software Engineer, Machine Learning Engineer, Full Stack Developer"></span>
@@ -193,7 +198,7 @@
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Resume</h2>
+                <h2>Timeline</h2>
                 <p>MS CS GMU | PSM-I | SDE | ML | POLYGLOT PROGRAMMER | EXUBERANT LEARNER</p>
             </div>
 
@@ -486,19 +491,128 @@
 
         </div>
     </section><!-- End Resume Section -->
-    <!-- ======= Contact Section ======= -->
-    <section class="resume" id="contact">
+
+
+    <!-- ======= Blog Section ======= -->
+    <section class="blog" id="blogs">
         <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-                <h2>Contact</h2>
+                <h2>Blogs</h2>
             </div>
-            <div class="calendly-inline-widget"
-                 data-url="https://calendly.com/janitbidhan/connect-with-me?hide_landing_page_details=1&hide_gdpr_banner=1"
-                 style="min-width:320px;height:700px;"></div>
+            <div class="row" style="padding: 10px;">
+                <div class="container mt-4 centered-box">
+                    <div class='sk-ww-medium-publication-feed' data-embed-id='176720'>
+                    </div>
+                </div>
+    </section><!-- End Contact Section -->
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" id="contact">
+        <div class="container" data-aos="fade-up">
 
+            <div class="section-title">
+                <h2 id="formHeading">Connect with Me</h2>
+            </div>
+            <div class="row" style="padding: 10px;">
+                <div class="container mt-4 centered-box">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button aria-controls="form" aria-selected="true" class="nav-link active" data-bs-target="#form"
+                                    data-bs-toggle="tab" id="form-tab" role="tab" type="button">Email
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button aria-controls="scheduleMeet" aria-selected="false" class="nav-link"
+                                    data-bs-target="#scheduleMeet" data-bs-toggle="tab" id="schedule-tab" role="tab"
+                                    type="button">Schedule a Meeting
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button aria-controls="socialMedia" aria-selected="false" class="nav-link" data-bs-target="#socialMedia"
+                                    data-bs-toggle="tab" id="social-tab" role="tab" type="button">Social
+                                Media
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3" id="myTabContent">
+                        <div aria-labelledby="form-tab" class="tab-pane fade show active" id="form" role="tabpanel">
+                            <form accept-charset="UTF-8" class="box-form"
+                                  id="contactForm"
+                                  style="padding: 20px; margin: 10px;">
+                                <div class="form-group">
+                                    <label for="name">Name:</label>
+                                    <input class="form-control" id="name" name="name" placeholder="Enter your name"
+                                           required
+                                           type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input class="form-control" id="email" name="email" placeholder="Enter your email"
+                                           required
+                                           type="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="reason">Reason:</label>
+                                    <div class="custom-dropdown">
+                                        <select class="form-control" id="reason" name="reason">
+                                            <option disabled selected value="">Select a reason</option>
+                                            <option value="Opportunity">Discuss Opportunity</option>
+                                            <option value="Networking">Networking</option>
+                                            <option value="Feedback">Provide Feedback</option>
+                                            <option value="Referral">Need Referral | Guidance</option>
+                                            <option value="Resume-Review">Need Resume Review</option>
+                                        </select>
+                                        <span class="arrow"></span>
+                                    </div>
+                                </div>
+                                <!-- Honeypot input to prevent spams -->
+                                <div style="display:none !important">
+                                    <input name="_gotcha" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">Message:</label>
+                                    <textarea class="form-control" id="message" name="message"
+                                              placeholder="Enter your message"
+                                              required rows="5"></textarea>
+                                </div>
+                                <button class="btn btn-primary btn-block"
+                                        style="background: #0763bb; margin-top: 10px;width: 100%"
+                                        type="submit">Send
+                                </button>
+                            </form>
+                            <div class="centered-box" id="responseContainer" style="display: none;"></div>
+                        </div>
+                        <div aria-labelledby="schedule-tab" class="tab-pane fade" id="scheduleMeet" role="tabpanel">
+                            <div class="calendly-inline-widget"
+                                 data-url="https://calendly.com/janitbidhan/connect-with-me?hide_event_type_details=1&hide_gdpr_banner=1"
+                                 id="meetingWidgetContainer"
+                                 style="min-width:320px;height:700px;"></div>
+                        </div>
+                        <div aria-labelledby="social-tab" class="tab-pane fade" id="socialMedia" role="tabpanel">
+                            <div class="social-links">
+                                <a class="social-link twitter" href="https://twitter.com/JanitBidhan" data-tooltip="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a class="social-link instagram" href="https://www.instagram.com/janitbidhan/" data-tooltip="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="social-link github" href="https://github.com/janitbidhan" data-tooltip="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a class="social-link linkedin" href="https://www.linkedin.com/in/janitbidhan/" data-tooltip="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a class="social-link gmail" href="mailto:janitbidhan@gmail.com" data-tooltip="Email">
+                                    <i class="far fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section><!-- End Contact Section -->
+
 </main><!-- End #main -->
 
 <!-- ======= Footer ======= -->
@@ -525,7 +639,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
 <script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-
+<script src='https://widgets.sociablekit.com/medium-publication-feed/widget.js' async defer></script>
 <!-- Template Main JS File -->
 <script src="assets/js/main.js"></script>
 <!-- Google tag (gtag.js) -->
@@ -538,8 +652,60 @@
     }
 
     gtag('js', new Date());
-
     gtag('config', 'G-0FWGVQFSP7');
+
+    // Your existing JavaScript code here
+    const form = document.getElementById("contactForm");
+    form.addEventListener("submit", formSubmit);
+
+    function formSubmit(e) {
+        e.preventDefault();
+        const formData = new FormData(e.target);
+
+        fetch("https://getform.io/f/5eea2ad6-cbdf-48c0-b93b-c195f3ad7fbf", {
+            method: "POST",
+            body: formData,
+            headers: {
+                "Accept": "application/json",
+            },
+        })
+            .then(response => response.json()) // Parse the response as JSON
+            .then(data => handleResponse(data))
+            .catch(error => {
+                const formContainer = document.getElementById("contactForm");
+                formContainer.style.display = 'none';
+                console.log(error);
+                showError("Please try again!");
+            });
+    }
+
+    function handleResponse(data) {
+        const responseContainer = document.getElementById("responseContainer");
+        const formContainer = document.getElementById("contactForm");
+        if (data.success === true) {
+            responseContainer.innerHTML = `
+                    <h3>Thank you for your message!</h3>
+                    <p>We will get back to you shortly.</p>
+                `;
+        } else {
+            responseContainer.innerHTML = `
+                    <h3>Oops, something went wrong!</h3>
+                    <p>Please try again in sometime!</p>
+                `;
+        }
+        responseContainer.style.display = 'block';
+        formContainer.style.display = 'none';
+
+    }
+
+    function showError(message) {
+        const responseContainer = document.getElementById("responseContainer");
+        responseContainer.innerHTML = `
+                <h3>${message}</h3>
+                <p>We will get back to you shortly.</p>
+            `;
+        responseContainer.style.display = 'block';
+    }
 </script>
 <script async crossorigin="anonymous"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8704847408987541"></script>
