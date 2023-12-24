@@ -605,6 +605,7 @@
                                  data-url="https://calendly.com/janitbidhan/connect-with-me?hide_event_type_details=1&hide_gdpr_banner=1"
                                  id="meetingWidgetContainer"
                                  style="min-width:320px;height:700px;"></div>
+                            <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
                         </div>
                         <div aria-labelledby="social-tab" class="tab-pane fade" id="socialMedia" role="tabpanel">
                             <div class="social-links">
@@ -724,6 +725,18 @@
             `;
         responseContainer.style.display = 'block';
     }
+
+     (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; typeof namespace === "string" ? (cal.ns[namespace] = api) && p(api, ar) : p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+Cal("init", "15min", {origin:"https://cal.com"});
+
+  Cal.ns["15min"]("inline", {
+	elementOrSelector:"#my-cal-inline",
+	calLink: "janit/15min",
+	layout: "month_view"
+  });
+  
+  Cal.ns["15min"]("ui", {"styles":{"branding":{"brandColor":"#0076ff"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    
 </script>
 <script async crossorigin="anonymous"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8704847408987541"></script>
