@@ -26,53 +26,148 @@ body.dark-mode h5,
 body.dark-mode h6 {
     color: white;
 }
-body.dark-mode h5 a{
+
+body.dark-mode h5 a {
     color: black;
     margin: 0;
 }
-body.dark-mode h5 p{
+
+body.dark-mode h5 p {
     color: black;
     margin: 0;
 }
-body.dark-mode .resume-title{
+
+body.dark-mode .resume-title {
     color: white;
 }
+
 body.dark-mode .skills .progress .skill {
-    color:white;
+    color: white;
 }
-body.dark-mode .resume .resume-item h4{
+
+body.dark-mode .resume .resume-item h4 {
     color: lightcyan;
 }
-body.dark-mode  .resume .resume-item::before{
+
+body.dark-mode .resume .resume-item::before {
     border: 2px solid #19bb05;
 }
-body.dark-mode .resume .resume-item{
+
+body.dark-mode .resume .resume-item {
     border-left: 2px solid #19bb05;
 }
-body.dark-mode .resume .resume-item h5{
+
+body.dark-mode .resume .resume-item h5 {
     background: palegreen;
     color: black;
 }
 
-body.dark-mode  sk-ww-medium-publication-feed{
+body.dark-mode sk-ww-medium-publication-feed {
     background: black;
     color: white;
 }
 
-body.dark-mode header{
+body.dark-mode #hero:before {
+    background: rgba(26, 36, 34, 0.8);
+}
+
+body.dark-mode #hero .social-links a,
+body.dark-mode #hero p,
+body.dark-mode #hero h1 {
+    color: white;
+}
+
+body.dark-mode #hero .social-links a:hover {
+    background: palegreen;
+    border-radius: 50%;
+}
+
+body.dark-mode #hero p span {
+    color: palegreen;
+}
+
+body.dark-mode .section-title h2::after {
+    background: palegreen;
+}
+
+body.dark-mode .skills .progress-bar {
+    background: palegreen;
+}
+
+body.dark-mode .nav-tabs .nav-item.show .nav-link,
+body.dark-mode .nav-tabs .nav-link {
+    color: palegreen;
+}
+
+body.dark-mode .about .content h3 {
+    color: palegreen;
+}
+
+body.dark-mode .contact-button {
+    background: palegreen;
+    color: black;
+    border-color: black;
+}
+
+body.dark-mode .contact-button:hover {
+    background: #659a65;
+    color: white;
+    border-color: white;
+}
+
+body.dark-mode #footer .social-links a {
+    background: palegreen;
+    color: black;
+}
+
+body.dark-mode #footer .social-links a:hover {
+    background: #659a65;
+    color: black;
+}
+
+body.dark-mode .back-to-top {
+    background: palegreen;
+}
+
+body.dark-mode .back-to-top i {
+    color: black;
+}
+
+.contact-button {
+    background: #0763bb;
+    margin-top: 10px;
+    width: 100%;
+}
+
+body.dark-mode header {
     background: black !important;
 }
-body.dark-mode .mobile-nav-toggle{
+
+body.dark-mode .mobile-nav-toggle {
     color: black;
-    background-color:white;
+    background-color: white;
 }
 
-body.dark-mode header nav li a{
+body.dark-mode header nav li a {
     color: black;
 }
 
-body.dark-mode a#mode-toggle{
+body.dark-mode a#mode-toggle {
     background: #ffe2c0;
+    color: black;
+}
+
+body.dark-mode .nav-menu a:hover,
+body.dark-mode .nav-menu .active,
+body.dark-mode .nav-menu .active:focus,
+body.dark-mode .nav-menu li:hover>a {
+    color: black;
+    background: palegreen;
+}
+body.dark-mode .nav-menu a:hover span,
+body.dark-mode .nav-menu .active span,
+body.dark-mode .nav-menu .active:focus span,
+body.dark-mode .nav-menu li:hover>a span{
     color: black;
 }
 
@@ -82,11 +177,11 @@ a#mode-toggle {
     color: white;
 }
 
-a#mode-toggle  span{
+a#mode-toggle span {
     color: white;
 }
 
-body.dark-mode a#mode-toggle  span{
+body.dark-mode a#mode-toggle span {
     color: black;
 }
 
@@ -94,22 +189,22 @@ hr {
     border-top: 5px solid black;
 }
 
-body.dark-mode hr{
+body.dark-mode hr {
     border-top: 5px solid white;
 }
 
-body.dark-mode #footer{
+body.dark-mode #footer {
     background: black;
     color: white;
     border-top: 2px solid;
 }
 
-body.dark-mode section{
+body.dark-mode section {
     border-top: 2px solid;
 }
 
 p {
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 a {
@@ -255,7 +350,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .nav-menu {
     padding: 0;
@@ -268,7 +363,7 @@ h6 {
     list-style: none;
 }
 
-.nav-menu > ul > li {
+.nav-menu>ul>li {
     position: relative;
     white-space: nowrap;
 }
@@ -318,7 +413,7 @@ h6 {
 .nav-menu a:hover,
 .nav-menu .active,
 .nav-menu .active:focus,
-.nav-menu li:hover > a {
+.nav-menu li:hover>a {
     color: #fff;
     background: #0563bb;
 }
@@ -326,23 +421,23 @@ h6 {
 .nav-menu a:hover span,
 .nav-menu .active span,
 .nav-menu .active:focus span,
-.nav-menu li:hover > a span {
+.nav-menu li:hover>a span {
     color: #fff;
 }
 
 .nav-menu a:hover,
-.nav-menu li:hover > a {
+.nav-menu li:hover>a {
     width: 100%;
     color: #fff;
 }
 
 .nav-menu a:hover span,
-.nav-menu li:hover > a span {
+.nav-menu li:hover>a span {
     display: block;
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
     position: fixed;
@@ -390,6 +485,7 @@ h6 {
 
 .janblockquote {
     margin: 20px;
+    color: palevioletred;
 }
 
 @media (min-width: 992px) {
@@ -439,6 +535,7 @@ h6 {
     line-height: 1;
     margin-right: 20px;
     transition: 0.3s;
+    padding: 2px;
 }
 
 #hero .social-links a:hover {
@@ -769,7 +866,8 @@ section {
     transform: translateY(-50%);
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-top: 5px solid #666; /* Change the color as desired */
+    border-top: 5px solid #666;
+    /* Change the color as desired */
     pointer-events: none;
 }
 
@@ -797,7 +895,8 @@ section {
 }
 
 .social-link:hover {
-    color: #0763bb; /* Hover color */
+    color: #0763bb;
+    /* Hover color */
 }
 
 /* Customize individual social media icons */
@@ -838,7 +937,8 @@ section {
 }
 
 .social-link:hover {
-    background-color: #0763bb; /* Hover color */
+    background-color: #0763bb;
+    /* Hover color */
 }
 
 .social-link:hover::before {
