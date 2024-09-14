@@ -1,10 +1,47 @@
-/*
-Name: Janit Bidhan
-G Number: G01326011
-Email: jbidhan@gmu.edu
-This page is for my portfolio and has js for animation and links.
-Deployed on S3.
-*/
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggleIcon = document.getElementById('mode-toggle');
+    const themeToggleText = document.getElementById('mode-toggle-text');
+    const currentTheme = localStorage.getItem('theme');
+
+    // Apply saved theme
+    if (currentTheme) {
+        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+        updateThemeIcon(currentTheme);
+    }
+
+    themeToggleIcon.addEventListener('click', () => {
+        const isDarkMode = document.body.classList.toggle('dark-mode');
+        // Save the current theme in localStorage
+        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+        updateThemeIcon(isDarkMode ? 'dark' : 'light');
+    });
+
+    function updateThemeIcon(theme) {
+        if (theme === 'dark') {
+            themeToggleIcon.classList.remove('bi-moon');
+            themeToggleIcon.classList.add('bi-sun');
+            themeToggleText.innerText = "Light Mode";
+
+            // Select all h5 elements within the specific containers
+            const h5Elements = document.querySelectorAll('.resume .resume-item h5');
+            h5Elements.forEach(element => {
+                element.classList.add('dark-mode');
+            });
+        } else {
+            themeToggleIcon.classList.remove('bi-sun');
+            themeToggleIcon.classList.add('bi-moon');
+            themeToggleText.innerText = "Dark Mode";
+
+            // Select all h5 elements within the specific containers
+            const h5Elements = document.querySelectorAll('.resume .resume-item h5');
+            h5Elements.forEach(element => {
+                element.classList.remove('dark-mode');
+            });
+        }
+    }
+});
+
+
 (function () {
     "use strict";
 
