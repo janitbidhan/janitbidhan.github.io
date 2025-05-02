@@ -1,19 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggleIcon = document.getElementById('mode-toggle');
     const themeToggleText = document.getElementById('mode-toggle-text');
-    const currentTheme = localStorage.getItem('theme');
+    const currentTheme = localStorage.getItem('theme') || 'light'; // Default to 'light'
 
-    // Apply saved theme
-    if (currentTheme) {
-        document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-        updateThemeIcon(currentTheme);
-    }
+    // Apply saved theme or default theme
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+    updateThemeIcon(currentTheme);
 
     themeToggleIcon.addEventListener('click', () => {
         const isDarkMode = document.body.classList.toggle('dark-mode');
-        // Save the current theme in localStorage
-        localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
-        updateThemeIcon(isDarkMode ? 'dark' : 'light');
+        const newTheme = isDarkMode ? 'dark' : 'light';
+        localStorage.setItem('theme', newTheme); // Save the current theme in localStorage
+        updateThemeIcon(newTheme);
     });
 
     function updateThemeIcon(theme) {
@@ -22,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
             themeToggleIcon.classList.add('bi-sun');
             themeToggleText.innerText = "Light Mode";
 
-            // Select all h5 elements within the specific containers
+            // Add dark mode styles to specific elements
             const h5Elements = document.querySelectorAll('.resume .resume-item h5');
             h5Elements.forEach(element => {
                 element.classList.add('dark-mode');
@@ -32,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             themeToggleIcon.classList.add('bi-moon');
             themeToggleText.innerText = "Dark Mode";
 
-            // Select all h5 elements within the specific containers
+            // Remove dark mode styles from specific elements
             const h5Elements = document.querySelectorAll('.resume .resume-item h5');
             h5Elements.forEach(element => {
                 element.classList.remove('dark-mode');
@@ -239,5 +237,3 @@ document.addEventListener('DOMContentLoaded', () => {
      * Initiate Pure Counter
      */
 })()
-
-
